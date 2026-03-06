@@ -1,0 +1,9 @@
+# Backend 
+fastapi
+uvicorn
+sqlalchemy
+asyncpg
+psycopg2-binary
+
+# Environment variables
+python-dotenv
