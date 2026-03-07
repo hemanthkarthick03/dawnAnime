@@ -4,6 +4,7 @@
 Get-ChildItem -Path . -Recurse -Directory -Include '__pycache__' | Remove-Item -Force -Recurse
 ```
 
-```python
-    
+Running Application:
+```bash
+uv run python -m app.main
 ```

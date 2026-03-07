@@ -1,12 +1,9 @@
 import os
-from dotenv import load_dotenv
-
-load_dotenv()
+from app.utils.settings import settings
 
 DATABASE_URL = (
-    f"postgresql+asyncpg://{os.getenv('DB_USER')}:"
-    f"{os.getenv('DB_PASSWORD')}@"
-    f"{os.getenv('DB_HOST')}:"
-    f"{os.getenv('DB_PORT')}/"
-    f"{os.getenv('DB_NAME')}"
+    f"postgresql+asyncpg://{settings.DB_USER}:"
+    f"{settings.DB_PASSWORD}@"
+    f"{settings.DB_HOST}:{settings.DB_PORT}/"
+    f"{settings.DB_NAME}"
 )
