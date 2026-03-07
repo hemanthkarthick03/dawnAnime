@@ -1,0 +1,24 @@
+# Backend 
+fastapi
+uvicorn
+sqlalchemy
+asyncpg
+psycopg2-binary
+
+alembic
+python-jose[cryptography]
+passlib[bcrypt]
+pydantic[email]
+arq
+redis
+boto3
+minio
+slowapi
+
+# Testing
+pytest
+pytest-asyncio
+httpx
+
+# Environment variables
+python-dotenv

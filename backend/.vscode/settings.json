@@ -1,0 +1,75 @@
+{
+  "workbench.colorTheme": "Best Themes - Github Dark Colorblind",
+
+  "editor.fontFamily": "JetBrains Mono, Fira Code",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.smoothScrolling": true,
+
+  "editor.minimap.enabled": false,
+  "editor.renderLineHighlight": "all",
+
+  "editor.semanticHighlighting.enabled": true,
+
+  "workbench.colorCustomizations": {
+
+    "editor.background": "#0f111a",
+    "editor.lineHighlightBackground": "#1a1c25",
+
+    "activityBar.background": "#1e1e2e",
+    "sideBar.background": "#181825",
+    "statusBar.background": "#11111b",
+
+    "editorCursor.foreground": "#ffcc00",
+
+    "editorBracketHighlight.foreground1": "#ff5555",
+    "editorBracketHighlight.foreground2": "#50fa7b",
+    "editorBracketHighlight.foreground3": "#bd93f9",
+    "editorBracketHighlight.foreground4": "#ffb86c",
+    "editorBracketHighlight.foreground5": "#8be9fd",
+    "editorBracketHighlight.foreground6": "#f1fa8c"
+  },
+
+  "editor.tokenColorCustomizations": {
+
+    "comments": "#6A9955",
+    "keywords": "#ff79c6",
+    "numbers": "#bd93f9",
+    "strings": "#f1fa8c",
+    "types": "#8be9fd",
+    "functions": "#50fa7b",
+    "variables": "#ffffff",
+
+    "textMateRules": [
+      {
+        "scope": "entity.name.function",
+        "settings": {
+          "foreground": "#50fa7b"
+        }
+      },
+      {
+        "scope": "keyword.control",
+        "settings": {
+          "foreground": "#ff79c6"
+        }
+      },
+      {
+        "scope": "variable",
+        "settings": {
+          "foreground": "#f8f8f2"
+        }
+      },
+      {
+        "scope": "string",
+        "settings": {
+          "foreground": "#f1fa8c"
+        }
+      }
+    ]
+  }
+}
