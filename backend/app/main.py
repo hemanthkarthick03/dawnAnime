@@ -1,3 +1,4 @@
+from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from sqlalchemy import text
 from db.engine import engine
@@ -5,14 +6,19 @@ from app.api.health import router as health_router
 
 API_PREFIX = "/api/v1"
 
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Startup
+    yield
+    # Shutdown
 
 app = FastAPI(
-    title = "DawnAnime Studio API",
-    description = "API for DawnAnime Studio",
-    version = "1.0.0",
-    docs_url=f"{API_PREFIX}/docs"
+    title="DawnAnime Studio API",
+    description="API for DawnAnime Studio",
+    version="1.0.0",
+    docs_url=f"{API_PREFIX}/docs",
+    lifespan=lifespan
 )
-
 
 app.include_router(health_router, prefix=API_PREFIX, tags=["Health"])
 
